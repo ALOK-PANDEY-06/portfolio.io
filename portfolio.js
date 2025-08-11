@@ -1,5 +1,5 @@
 // Typing Effect
-const textArray = ["Web Developer", "Problem Solver", "Creative Coder","Tech Explorer"];
+const textArray = ["Web Developer", "Problem Solver","Tech Explorer", "Creative Coder"];
 let typingText = document.querySelector(".typing-text");
 let arrayIndex = 0;
 let charIndex = 0;
@@ -28,5 +28,3 @@ function eraseEffect() {
 document.addEventListener("DOMContentLoaded", () => {
     typeEffect();
 });
-
-
