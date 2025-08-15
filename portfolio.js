@@ -1,30 +1,28 @@
-// Typing Effect
-const textArray = ["Web Developer", "Problem Solver","Tech Explorer", "Creative Coder"];
-let typingText = document.querySelector(".typing-text");
-let arrayIndex = 0;
-let charIndex = 0;
+// Resume Download
+document.getElementById('downloadBtn').addEventListener('click', () => {
+    alert("Your resume will be downloaded.");
+    window.location.href = "../files/resume.pdf"; // Ensure file exists
+});
 
-function typeEffect() {
-    if (charIndex < textArray[arrayIndex].length) {
-        typingText.textContent += textArray[arrayIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(typeEffect, 100);
-    } else {
-        setTimeout(eraseEffect, 2000);
-    }
-}
+// Contact Button
+document.getElementById('contactBtn').addEventListener('click', () => {
+    window.location.href = "mailto:al0kpandey6405@gmail.com";
+});
 
-function eraseEffect() {
-    if (charIndex > 0) {
-        typingText.textContent = textArray[arrayIndex].substring(0, charIndex - 1);
-        charIndex--;
-        setTimeout(eraseEffect, 50);
-    } else {
-        arrayIndex = (arrayIndex + 1) % textArray.length;
-        setTimeout(typeEffect, 500);
-    }
-}
+// Hire Me Button
+document.getElementById('hireBtn').addEventListener('click', () => {
+    window.location.href = "mailto:al0kpandey6405@gmail.com?subject=Hiring Inquiry&body=Hi Alok,%0D%0A%0D%0AI would like to discuss an opportunity with you.";
+});
 
-document.addEventListener("DOMContentLoaded", () => {
-    typeEffect();
+// Theme Toggle
+document.getElementById('themeBtn').addEventListener('click', function () {
+    document.body.classList.toggle('light-theme');
+    document.body.classList.toggle('dark-theme');
+    this.textContent = document.body.classList.contains('light-theme') ? "☀ Light" : "🌙 Dark";
+});
+
+// AOS Animation Init
+AOS.init({
+    duration: 1000,
+    once: true
 });
