@@ -1,35 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio.io</title>
-    <link rel="stylesheet" href="portfolio.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alok Pandey's Portfolio - AI, Web Development, and Tech Projects">
+    <meta name="keywords" content="Alok Pandey, Portfolio, Web Developer, AI, Python, JavaScript">
+    <title>Alok Pandey - Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="portfolio.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <!-- HERO Section -->
-    <section class="hero">
-  <div class="content">
-    <img src="IMG_20240303_200403_663.jpg" alt="Profile" class="profile-pic">
-    <h1>Hi, I'm <span class="name">ALOK PANDEY</span></h1>
-    <h2><span class="typing-text"></span></h2><br>
-    <a href="#about" class="glow-button">Explore More</a>
-  </div>
-</section>
+<body class="dark-theme">
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>
-                I am a passionate web developer who loves crafting beautiful,
-                functional, and animated websites that leave an impression.
-            </p>
-            <a href="#" class="glow-button">Hire Me</a>
+    <!-- Header -->
+
+<header class="header">
+    <div class="theme-toggle">
+        <button id="themeBtn">🌙 Dark</button>
+    </div>
+
+    <div class="profile-container" data-aos="fade-down">
+        <img src="IMG_20240303_200403_663.jpg" alt="Profile photo of Alok Pandey" class="profile-pic" id="profileImage">
+
+        <h1 class="animated-text glow">ALOK PANDEY</h1>
+        <p>📍 Jabalpur, India – 482001</p>
+        <p>📞 <a href="tel:+917804829655">+91 7804829655</a></p>
+        <p>✉ <a href="mailto:al0kpandey6405@gmail.com">al0kpandey6405@gmail.com</a></p>
+
+        <div class="links">
+            <a href="https://linkedin.com/in/alok-pandey" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/your-github-username" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
         </div>
-    </section>
 
+        <div class="buttons">
+            <button class="glow-btn" id="downloadBtn">📄 Download Resume</button>
+            <button class="glow-btn" id="contactBtn">📩 Contact Me</button>
+            <button class="glow-btn" id="hireBtn">💼 Hire Me</button>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about-me">About Me |</a>
+        <a href="#experience">Experience |</a>
+        <a href="#education">Education |</a>
+        <a href="#projects">Projects |</a>
+        <a href="#skills">Skills</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section id="about-me" data-aos="fade-up">
+            <h2>About Me 📄</h2>
+            <p>Co-Leader at AstroNerds Campus Club and Volunteer at GeeksforGeeks Student Chapter. Passionate about AI, Web Development, and problem-solving. Experienced in managing tech communities, building projects, and participating in hackathons.</p>
+        </section>
+
+        <section id="experience" data-aos="fade-up">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>Co-Leader – AstroNerds Campus Club</strong> (Aug 2025 – Present)
+                    <ul>
+                        <li>Organized astronomy and space science events.</li>
+                        <li>Managed AstroTech Nights integrating coding with astronomy.</li>
+                        <li>Coordinated guest lectures with industry experts.</li>
+                    </ul>
+                </li>
+                <li><strong>Volunteer – GeeksforGeeks Student Chapter</strong> (July 2025 – Present)
+                    <ul>
+                        <li>Organized coding competitions and webinars.</li>
+                        <li>Onboarded new members and maintained communication.</li>
+                    </ul>
+                </li>
+                <li><strong>Freelance Web Developer</strong> (Jan 2025 – Present)
+                    <ul>
+                        <li>Built responsive websites using HTML, CSS, JavaScript, React.</li>
+                        <li>Developed a Library Management System in Python (Flask).</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="education" data-aos="fade-up">
+            <h2>Education</h2>
+            <ul>
+                <li>B.Tech in Computer Science – GGITS, RGPV (2023 – 2027)</li>
+                <li>Class 12 – Jay Jyoti School (2023 – 67%)</li>
+                <li>Class 10 – Jay Jyoti School (2021 – 83%)</li>
+            </ul>
+        </section>
+
+        <section id="projects" data-aos="fade-up">
+            <h2>Projects</h2>
+            <ul>
+                <li>AI Healthcare – AI-based assistant for health management.</li>
+                <li>SpaceScope – Astronomy club portal.</li>
+                <li>Phantom AI – Productivity assistant.</li>
+                <li>VoteX – Blockchain-based voting demo.</li>
+            </ul>
+        </section>
+
+        <section id="skills" data-aos="fade-up">
+            <h2>Technical Skills</h2>
+            <p><strong>Languages:</strong> Python, Java, C++, JavaScript</p>
+            <p><strong>Frameworks:</strong> Flask, Django, React, Next.js</p>
+            <p><strong>Tools:</strong> Git, GitHub, VS Code, Figma</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+        <p>© 2025 Alok Pandey | All Rights Reserved</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="portfolio.js"></script>
 </body>
 </html>
-
