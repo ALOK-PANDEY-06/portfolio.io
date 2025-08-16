@@ -1,7 +1,6 @@
 // Resume Download
 document.getElementById('downloadBtn').addEventListener('click', () => {
-    alert("Your resume will be downloaded.");
-    window.location.href = "../files/resume.pdf";
+    window.location.href = "../files/resume.pdf"; 
 });
 
 // Contact Button
